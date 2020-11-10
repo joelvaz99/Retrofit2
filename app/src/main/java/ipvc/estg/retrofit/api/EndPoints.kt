@@ -14,5 +14,5 @@ interface EndPoints {
 
     @FormUrlEncoded
     @POST("/myslim/api/userlogin/")
-    fun postTest(@Field("username") username: String?): Call<OutputPost>
+    fun postTest(@Field("username") username: String?,@Field("password") password: String?): Call<OutputPost>
 }
